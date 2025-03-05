@@ -8,7 +8,7 @@ export function OZLogo() {
   const { resolvedTheme } = useTheme()
   return (
     <Image
-      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/OZ-Logo-${resolvedTheme === 'dark' ? 'White' : 'Black'}.svg`}
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH || '.'}/OZ-Logo-${resolvedTheme === 'dark' ? 'White' : 'Black'}.svg`}
       alt="OpenZeppelin Logo"
       width={200}
       height={40}

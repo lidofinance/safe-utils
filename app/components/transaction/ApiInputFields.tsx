@@ -55,7 +55,7 @@ export default function ApiInputFields({ form }: ApiInputFieldsProps) {
                     {field.value && (
                       <div className="flex items-center">
                         <img
-                          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/${
+                          src={`${process.env.NEXT_PUBLIC_BASE_PATH || '.'}/${
                             NETWORKS.find((network) => network.value === field.value)?.logo
                           }`}
                           alt={`${field.value} logo`}
@@ -72,7 +72,7 @@ export default function ApiInputFields({ form }: ApiInputFieldsProps) {
                   <SelectItem key={network.value} value={network.value}>
                     <div className="flex items-center">
                       <img
-                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/${network.logo}`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || '.'}/${network.logo}`}
                         alt={`${network.label} logo`}
                         className="w-5 h-5 mr-2"
                       />

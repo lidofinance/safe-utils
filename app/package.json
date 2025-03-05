@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:standalone": "STATIC_EXPORT=true next build && npm run make_standalone",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "make_standalone": "node ./scripts/createStandaloneRelease"
   },
   "dependencies": {
     "@next/third-parties": "^15.2.0",
