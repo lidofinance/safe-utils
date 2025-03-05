@@ -94,23 +94,15 @@ async function createStandaloneRelease() {
     console.log("Folder copy complete.");
 
     const indexPath = path.join(destDir, "index.html");
-    const standalonePath = path.join(destDir, "standalone.html");
-    try {
-      await fsPromises.rename(indexPath, standalonePath);
-      console.log("Renamed index.html to standalone.html.");
-    } catch (err) {
-      console.error(`Error renaming index.html: ${err}`);
-      process.exit(1);
-    }
 
-    let htmlContent = await fsPromises.readFile(standalonePath, "utf8");
+    let htmlContent = await fsPromises.readFile(indexPath, "utf8");
 
     htmlContent = removeHowItWorksAnchor(htmlContent);
     htmlContent = fixAssetPathsInHtml(htmlContent);
 
-    await fsPromises.writeFile(standalonePath, htmlContent, "utf8");
+    await fsPromises.writeFile(indexPath, htmlContent, "utf8");
     console.log(
-      `Post-build processing complete. Modified HTML written to "${standalonePath}".`
+      `Post-build processing complete. Modified HTML written to "${indexPath}".`
     );
   } catch (err) {
     console.error("An error occurred during post-build processing:", err);
