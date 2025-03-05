@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href="./_next/static/media/a34f9d1faa5f3315-s.p.woff2" as="font" crossorigin=""
+    type="font/woff2" />
+  <link rel="stylesheet" href="./_next/static/css/5aa9955cd35d74ae.css" data-precedence="next" />
+  <link rel="preload" as="script" fetchPriority="low" href="./_next/static/chunks/webpack-ab364ee30b651afe.js" />
+  <script src="./_next/static/chunks/0e5ce63c-58bf1632029c459a.js" async=""></script>
+  <script src="./_next/static/chunks/main-app-7ea3395816e12c13.js" async=""></script>
+  <script src="./_next/static/chunks/app/page-80b827efd8b795ce.js" async=""></script>
+  <script src="./_next/static/chunks/app/layout-3d653f56a4b91155.js" async=""></script>
+  <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-SY66CZ3XZT" as="script" />
+  <title>Safe Utils | OpenZeppelin</title>
+  <meta name="description"
+    content="Preview and calculate Safe transaction hashes for Ethereum and other EVM chains. Verify transaction signatures and domain hashes." />
+  <meta name="author" content="OpenZeppelin" />
+  <meta name="keywords"
+    content="Safe, Gnosis Safe, transaction hash, Ethereum, multisig, blockchain, smart contract, EVM" />
+  <meta property="og:title" content="Safe Utils | OpenZeppelin" />
+  <meta property="og:description"
+    content="Preview and calculate Safe transaction hashes for Ethereum and other EVM chains" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Safe Utils | OpenZeppelin" />
+  <meta name="twitter:description"
+    content="Preview and calculate Safe transaction hashes for Ethereum and other EVM chains" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="144x144" />
+  <meta name="next-size-adjust" />
+  <script src="./_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+</head>
+
+<body class="__className_d65c78">
+  <script>!function () { try { var d = document.documentElement, c = d.classList; c.remove('light', 'dark'); var e = localStorage.getItem('theme'); if ('system' === e || (!e && true)) { var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t); if (m.media !== t || m.matches) { d.style.colorScheme = 'dark'; c.add('dark') } else { d.style.colorScheme = 'light'; c.add('light') } } else if (e) { c.add(e || '') } if (e === 'light' || e === 'dark') d.style.colorScheme = e } catch (e) { } }()</script>
+  <div class="min-h-screen flex flex-col bg-gradient-main dark:bg-gradient-main-dark">
+    <div class="flex flex-col flex-grow">
+      <header class=" top-0 z-50 w-full">
+        <div class="flex h-14 w-full items-center justify-between px-4 sm:px-5">
+          <div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="./"><!--$!--><template
+                data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><!--/$--></a></div>
+          <nav class="flex items-center space-x-2"><a href="https://github.com/openzeppelin/safe-utils" target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-8 w-8"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-github h-4 w-4">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg><span class="sr-only">GitHub</span></a><button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9"
+              type="button" id="radix-:Rslkq:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </svg><span class="sr-only">Toggle theme</span></button></nav>
+        </div>
+      </header>
+      <main class="flex-grow flex flex-col items-center justify-start py-10"><!--$!--><template
+          data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+        <div class="flex flex-col w-full justify-center items-center p-5">
+          <h1 class="text-[48px] font-semibold text-center mb-8 dark:text-title-dark text-title-light">Safe Utils</h1>
+          <div
+            class="border text-card-foreground shadow rounded-[24px] sm:p-16 p-5 dark:bg-card-dark bg-card-light w-full sm:w-[555px] mx-4">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="font-semibold leading-none tracking-tight">
+                <div class="animate-pulse rounded-md bg-muted h-8 w-48"></div>
+              </h3>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <div class="space-y-2">
+                <div class="animate-pulse rounded-md bg-muted h-4 w-24"></div>
+                <div class="animate-pulse rounded-md bg-muted h-10 w-full"></div>
+              </div>
+              <div class="animate-pulse rounded-md bg-muted h-10 w-40 mt-6"></div>
+            </div>
+          </div>
+        </div><!--/$-->
+      </main>
+    </div>
+    <footer class="py-4 w-full flex items-center justify-center">
+      <div class="container flex items-center justify-center">
+        <p class="text-center text-sm text-white flex items-center gap-2 flex-wrap justify-center">Developed with <svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-heart h-4 w-4">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+            </path>
+          </svg> by<!-- --> <a href="https://www.openzeppelin.com/" target="_blank" rel="noopener noreferrer"
+            class="font-medium text-white underline underline-offset-4 hover:text-white/80">OpenZeppelin</a>/ Subject to
+          our<!-- --> <a href="https://www.openzeppelin.com/tos" target="_blank" rel="noopener noreferrer"
+            class="font-medium text-white underline underline-offset-4 hover:text-white/80">Terms of Service</a>/ Script
+          by<!-- --> <a href="https://github.com/pcaversaccio" target="_blank" rel="noopener noreferrer"
+            class="font-medium text-white underline underline-offset-4 hover:text-white/80">@pcaversaccio</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="./_next/static/chunks/webpack-ab364ee30b651afe.js" async=""></script>
+  <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+  <script>self.__next_f.push([1, "1:HL[\"./_next/static/media/a34f9d1faa5f3315-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"./_next/static/css/5aa9955cd35d74ae.css\",\"style\"]\n"])</script>
+  <script>self.__next_f.push([1, "3:I[2846,[],\"\"]\n5:I[9107,[],\"ClientPageRoot\"]\n6:I[505,[\"931\",\"static/chunks/app/page-80b827efd8b795ce.js\"],\"default\",1]\n7:I[5495,[\"185\",\"static/chunks/app/layout-3d653f56a4b91155.js\"],\"ThemeProvider\"]\n8:I[1103,[\"185\",\"static/chunks/app/layout-3d653f56a4b91155.js\"],\"TooltipProvider\"]\n9:I[6190,[\"185\",\"static/chunks/app/layout-3d653f56a4b91155.js\"],\"Header\"]\na:I[4707,[],\"\"]\nb:I[6423,[],\"\"]\nc:I[4888,[\"185\",\"static/chunks/app/layout-3d653f56a4b91155.js\"],\"GoogleAnalytics\"]\ne:I[1060,[],\"\"]\nf:[]\n"])</script>
+  <script>self.__next_f.push([1, "0:[\"$\",\"$L3\",null,{\"buildId\":\"5xF4qYKrFCHAkzy4BFdb1\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"\"],\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L4\",[\"$\",\"$L5\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$6\"}],null],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"./_next/static/css/5aa9955cd35d74ae.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"className\":\"__className_d65c78\",\"children\":[\"$\",\"$L7\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"children\":[[\"$\",\"$L8\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"min-h-screen flex flex-col bg-gradient-main dark:bg-gradient-main-dark\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col flex-grow\",\"children\":[[\"$\",\"$L9\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex-grow flex flex-col items-center justify-start py-10\",\"children\":[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lb\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}]]}],[\"$\",\"footer\",null,{\"className\":\"py-4 w-full flex items-center justify-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"container flex items-center justify-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-center text-sm text-white flex items-center gap-2 flex-wrap justify-center\",\"children\":[\"Developed with \",[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-heart h-4 w-4\",\"children\":[[\"$\",\"path\",\"c3ymky\",{\"d\":\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"}],\"$undefined\"]}],\" by\",\" \",[\"$\",\"a\",null,{\"href\":\"https://www.openzeppelin.com/\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"font-medium text-white underline underline-offset-4 hover:text-white/80\",\"children\":\"OpenZeppelin\"}],\"./ Subject to our\",\" \",[\"$\",\"a\",null,{\"href\":\"https://www.openzeppelin.com/tos\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"font-medium text-white underline underline-offset-4 hover:text-white/80\",\"children\":\"Terms of Service\"}],\"./ Script by\",\" \",[\"$\",\"a\",null,{\"href\":\"https://github.com/pcaversaccio\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"font-medium text-white underline underline-offset-4 hover:text-white/80\",\"children\":\"@pcaversaccio\"}]]}]}]}]]}]}],[\"$\",\"$Lc\",null,{\"gaId\":\"G-SY66CZ3XZT\"}]]}]}]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$Ld\"],\"globalErrorComponent\":\"$e\",\"missingSlots\":\"$Wf\"}]\n"])</script>
+  <script>self.__next_f.push([1, "d:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Safe Utils | OpenZeppelin\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Preview and calculate Safe transaction hashes for Ethereum and other EVM chains. Verify transaction signatures and domain hashes.\"}],[\"$\",\"meta\",\"4\",{\"name\":\"author\",\"content\":\"OpenZeppelin\"}],[\"$\",\"meta\",\"5\",{\"name\":\"keywords\",\"content\":\"Safe, Gnosis Safe, transaction hash, Ethereum, multisig, blockchain, smart contract, EVM\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"Safe Utils | OpenZeppelin\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"Preview and calculate Safe transaction hashes for Ethereum and other EVM chains\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:title\",\"content\":\"Safe Utils | OpenZeppelin\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:description\",\"content\":\"Preview and calculate Safe transaction hashes for Ethereum and other EVM chains\"}],[\"$\",\"link\",\"13\",{\"rel\":\"icon\",\"href\":\"./favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"144x144\"}],[\"$\",\"meta\",\"14\",{\"name\":\"next-size-adjust\"}]]\n4:null\n"])</script>
+</body>
+
+</html>
